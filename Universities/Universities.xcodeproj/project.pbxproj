@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FCAB1819A268F8DFD17CA7A /* Pods_Universities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4823776B41315CA0B77FBFF /* Pods_Universities.framework */; };
+		DDA1A3181E969626004657BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3171E969626004657BD /* AppDelegate.swift */; };
+		DDA1A31A1E969626004657BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3191E969626004657BD /* ViewController.swift */; };
+		DDA1A31D1E969626004657BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA1A31B1E969626004657BD /* Main.storyboard */; };
+		DDA1A31F1E969626004657BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA1A31E1E969626004657BD /* Assets.xcassets */; };
+		DDA1A3221E969626004657BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA1A3201E969626004657BD /* LaunchScreen.storyboard */; };
+		DDA1A32D1E969900004657BD /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A32C1E969900004657BD /* RealmObject.swift */; };
+		DDA1A32F1E969931004657BD /* RealmUniversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A32E1E969931004657BD /* RealmUniversity.swift */; };
+		DDA1A3321E969E17004657BD /* UniversitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3311E969E17004657BD /* UniversitiesAPI.swift */; };
+		DDA1A3341E96C273004657BD /* RealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3331E96C273004657BD /* RealmDataSource.swift */; };
+		DDA1A3361E96C36D004657BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3351E96C36D004657BD /* TableViewCell.swift */; };
+		DDA1A3381E96C3EE004657BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3371E96C3EE004657BD /* Extensions.swift */; };
+		DDA1A33C1E96C4F5004657BD /* UniversitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A33B1E96C4F5004657BD /* UniversitiesDataSource.swift */; };
+		DDA1A3411E96CDC1004657BD /* UniversityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A33F1E96CDC1004657BD /* UniversityTableViewCell.swift */; };
+		DDA1A3421E96CDC1004657BD /* UniversityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDA1A3401E96CDC1004657BD /* UniversityTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4823776B41315CA0B77FBFF /* Pods_Universities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Universities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50EAAC489313ED8C9851261 /* Pods-Universities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universities.release.xcconfig"; path = "Pods/Target Support Files/Pods-Universities/Pods-Universities.release.xcconfig"; sourceTree = "<group>"; };
+		DDA1A3141E969626004657BD /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA1A3171E969626004657BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDA1A3191E969626004657BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDA1A31C1E969626004657BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDA1A31E1E969626004657BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDA1A3211E969626004657BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDA1A3231E969626004657BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA1A32C1E969900004657BD /* RealmObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
+		DDA1A32E1E969931004657BD /* RealmUniversity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUniversity.swift; sourceTree = "<group>"; };
+		DDA1A3311E969E17004657BD /* UniversitiesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitiesAPI.swift; sourceTree = "<group>"; };
+		DDA1A3331E96C273004657BD /* RealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataSource.swift; sourceTree = "<group>"; };
+		DDA1A3351E96C36D004657BD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DDA1A3371E96C3EE004657BD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DDA1A33B1E96C4F5004657BD /* UniversitiesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitiesDataSource.swift; sourceTree = "<group>"; };
+		DDA1A33F1E96CDC1004657BD /* UniversityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityTableViewCell.swift; sourceTree = "<group>"; };
+		DDA1A3401E96CDC1004657BD /* UniversityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniversityTableViewCell.xib; sourceTree = "<group>"; };
+		F945E392BCCD84335B29857C /* Pods-Universities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Universities/Pods-Universities.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDA1A3111E969626004657BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCAB1819A268F8DFD17CA7A /* Pods_Universities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EE79E70427604A115960BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4823776B41315CA0B77FBFF /* Pods_Universities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72B3DB870C919D4DF9E180C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F945E392BCCD84335B29857C /* Pods-Universities.debug.xcconfig */,
+				D50EAAC489313ED8C9851261 /* Pods-Universities.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDA1A30B1E969626004657BD = {
+			isa = PBXGroup;
+			children = (
+				DDA1A3161E969626004657BD /* Universities */,
+				DDA1A3151E969626004657BD /* Products */,
+				B72B3DB870C919D4DF9E180C /* Pods */,
+				7EE79E70427604A115960BDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA1A3151E969626004657BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA1A3141E969626004657BD /* Universities.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA1A3161E969626004657BD /* Universities */ = {
+			isa = PBXGroup;
+			children = (
+				DDA1A3301E969DFD004657BD /* Backend */,
+				DDA1A32B1E9698EE004657BD /* Models */,
+				DDA1A3171E969626004657BD /* AppDelegate.swift */,
+				DDA1A3191E969626004657BD /* ViewController.swift */,
+				DDA1A33F1E96CDC1004657BD /* UniversityTableViewCell.swift */,
+				DDA1A3401E96CDC1004657BD /* UniversityTableViewCell.xib */,
+				DDA1A3371E96C3EE004657BD /* Extensions.swift */,
+				DDA1A31B1E969626004657BD /* Main.storyboard */,
+				DDA1A31E1E969626004657BD /* Assets.xcassets */,
+				DDA1A3201E969626004657BD /* LaunchScreen.storyboard */,
+				DDA1A3231E969626004657BD /* Info.plist */,
+			);
+			path = Universities;
+			sourceTree = "<group>";
+		};
+		DDA1A32B1E9698EE004657BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDA1A3331E96C273004657BD /* RealmDataSource.swift */,
+				DDA1A32C1E969900004657BD /* RealmObject.swift */,
+				DDA1A32E1E969931004657BD /* RealmUniversity.swift */,
+				DDA1A3351E96C36D004657BD /* TableViewCell.swift */,
+				DDA1A33B1E96C4F5004657BD /* UniversitiesDataSource.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DDA1A3301E969DFD004657BD /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				DDA1A3311E969E17004657BD /* UniversitiesAPI.swift */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA1A3131E969626004657BD /* Universities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA1A3261E969626004657BD /* Build configuration list for PBXNativeTarget "Universities" */;
+			buildPhases = (
+				340DD984CE561E7F122A454B /* [CP] Check Pods Manifest.lock */,
+				DDA1A3101E969626004657BD /* Sources */,
+				DDA1A3111E969626004657BD /* Frameworks */,
+				DDA1A3121E969626004657BD /* Resources */,
+				CDC88320F8AC818DE23B604C /* [CP] Embed Pods Frameworks */,
+				134076DC9AE17A9D1A497C5D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Universities;
+			productName = Universities;
+			productReference = DDA1A3141E969626004657BD /* Universities.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDA1A30C1E969626004657BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Digital Prunes";
+				TargetAttributes = {
+					DDA1A3131E969626004657BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CHF6QJR2PR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DDA1A30F1E969626004657BD /* Build configuration list for PBXProject "Universities" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDA1A30B1E969626004657BD;
+			productRefGroup = DDA1A3151E969626004657BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA1A3131E969626004657BD /* Universities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDA1A3121E969626004657BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA1A3221E969626004657BD /* LaunchScreen.storyboard in Resources */,
+				DDA1A3421E96CDC1004657BD /* UniversityTableViewCell.xib in Resources */,
+				DDA1A31F1E969626004657BD /* Assets.xcassets in Resources */,
+				DDA1A31D1E969626004657BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		134076DC9AE17A9D1A497C5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Universities/Pods-Universities-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		340DD984CE561E7F122A454B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC88320F8AC818DE23B604C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Universities/Pods-Universities-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDA1A3101E969626004657BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA1A33C1E96C4F5004657BD /* UniversitiesDataSource.swift in Sources */,
+				DDA1A3321E969E17004657BD /* UniversitiesAPI.swift in Sources */,
+				DDA1A32F1E969931004657BD /* RealmUniversity.swift in Sources */,
+				DDA1A31A1E969626004657BD /* ViewController.swift in Sources */,
+				DDA1A3381E96C3EE004657BD /* Extensions.swift in Sources */,
+				DDA1A3341E96C273004657BD /* RealmDataSource.swift in Sources */,
+				DDA1A3181E969626004657BD /* AppDelegate.swift in Sources */,
+				DDA1A3361E96C36D004657BD /* TableViewCell.swift in Sources */,
+				DDA1A32D1E969900004657BD /* RealmObject.swift in Sources */,
+				DDA1A3411E96CDC1004657BD /* UniversityTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDA1A31B1E969626004657BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA1A31C1E969626004657BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA1A3201E969626004657BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA1A3211E969626004657BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDA1A3241E969626004657BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDA1A3251E969626004657BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA1A3271E969626004657BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F945E392BCCD84335B29857C /* Pods-Universities.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CHF6QJR2PR;
+				INFOPLIST_FILE = Universities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalprunes.Universities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DDA1A3281E969626004657BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50EAAC489313ED8C9851261 /* Pods-Universities.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CHF6QJR2PR;
+				INFOPLIST_FILE = Universities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalprunes.Universities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDA1A30F1E969626004657BD /* Build configuration list for PBXProject "Universities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA1A3241E969626004657BD /* Debug */,
+				DDA1A3251E969626004657BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA1A3261E969626004657BD /* Build configuration list for PBXNativeTarget "Universities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA1A3271E969626004657BD /* Debug */,
+				DDA1A3281E969626004657BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDA1A30C1E969626004657BD /* Project object */;
+}

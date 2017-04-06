@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Bolts-Swift (1.3.0)
+  - Realm (2.5.1):
+    - Realm/Headers (= 2.5.1)
+  - Realm/Headers (2.5.1)
+  - RealmSwift (2.5.1):
+    - Realm (= 2.5.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Bolts-Swift
+  - Realm (from `https://github.com/realm/realm-cocoa.git`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: 899c0ada49e178e917e69680949f494ffe7f2f8a
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: 899c0ada49e178e917e69680949f494ffe7f2f8a
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bolts-Swift: fa98d1b59fc1acea9b21a21306dcdca1c85e3737
+  Realm: 32f86104d37c8521f864d4274050b38ba6190733
+  RealmSwift: 1412cc70daaf4976766ca9c72ac24ff84bdea6cf
+
+PODFILE CHECKSUM: d1ff4084e76f675d579e94bc55f9b64c734400d2
+
+COCOAPODS: 1.2.0

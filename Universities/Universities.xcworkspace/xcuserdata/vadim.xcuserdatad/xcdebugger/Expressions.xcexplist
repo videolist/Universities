@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static UniversitiesAPI.(getUniversities(with : [UniversitiesAPI.fields : String]?, completionHandler : (Bool) -&gt; ()?) -&gt; ()).(closure #1):UniversitiesAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
