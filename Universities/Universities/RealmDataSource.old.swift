@@ -1,12 +1,10 @@
 //
-//  RealmDataSource.swift
-//  Universities
+//  TKRealmDataSource.swift
+//  Token
 //
-//  Created by Vadim on 4/24/17.
-//  Copyright © 2017 Digital Prunes. All rights reserved.
+//  Created by Vadim on 10/9/16.
 //
 
-import Foundation
 import UIKit
 import RealmSwift
 import BoltsSwift
@@ -17,6 +15,7 @@ protocol SectionDelegate: UITableViewDelegate, UITableViewDataSource {
 
 
 class TableViewRouter: NSObject, SectionDelegate {
+    
     var delegates: [SectionDelegate]!
     weak var tableView: UITableView!
     
@@ -27,7 +26,7 @@ class TableViewRouter: NSObject, SectionDelegate {
         tableView.dataSource = self
         self.delegates = delegates
     }
-    
+
     
     //MARK: UITableViewDelegate, UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,7 +55,7 @@ class TableViewRouter: NSObject, SectionDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegates[indexPath.section].tableView?(tableView, didSelectRowAt: indexPath)
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return delegates[section].tableView?(tableView, viewForHeaderInSection: section)
     }
@@ -85,17 +84,17 @@ class TableViewRouter: NSObject, SectionDelegate {
         }
         return false
     }
-    
+
 }
 
 class GenericTableDataSource: NSObject, SectionDelegate {
-    
+
     var selectedCallback: ((AnyObject) -> Void)?
     var configureCallback: ((TableViewCell) -> Void)?
     var changeCallback: ((Void) -> Void)?
     var editButtonTitle: String?
     var editCallback: ((AnyObject) -> Void)?
-    
+
     weak var tableView: UITableView!
     var delegateRouter: TableViewRouter!
     var headerView: UIView?
@@ -104,7 +103,7 @@ class GenericTableDataSource: NSObject, SectionDelegate {
     var count: NSInteger = 0
     
     var section: Int = 0
-    
+
     init(tableView: UITableView) {
         super.init()
         self.tableView = tableView
@@ -121,7 +120,7 @@ class GenericTableDataSource: NSObject, SectionDelegate {
     func stopObserving() {
     }
     
-    
+
     var filterPredicate: NSPredicate?
     
     //MARK: UITableViewDelegate, UITableViewDataSource
@@ -158,14 +157,14 @@ class GenericTableDataSource: NSObject, SectionDelegate {
         return 0
     }
     
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
+
     
 }
 
 class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSource {
-    
     var notificationToken: NotificationToken?
     var loadMoreTask: Task<Void>? {
         return Task<Void>()
@@ -177,7 +176,7 @@ class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSou
             startObservingRealm()
         }
     }
-    
+
     var filteredCollection: AnyRealmCollection<R> {
         var actualCollection = collection!
         if filterPredicate != nil {
@@ -199,29 +198,25 @@ class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSou
             startObservingRealm()
         }
     }
-    
+
     var items: [R]? {
         return Array(self.filteredCollection)
     }
     
-    //MARK:- Initialization
-    typealias Collection = AnyRealmCollection<R>
-    
     convenience init(_ tableView: UITableView) {
-        self.init(tableView, collection: AnyRealmCollection(RealmObject.allObjects(type: R.self)))
+        self.init(tableView, collection: RealmObject.allObjects(type: R.self))
     }
     
     convenience init(_ tableView: UITableView, section: Int, headerDelegate: SectionDelegate? = nil) {
-        self.init(tableView, section: section, collection: AnyRealmCollection(R.allObjects(type: R.self)), headerDelegate: headerDelegate)
+        self.init(tableView, section: section, collection: R.allObjects(type: R.self), headerDelegate: headerDelegate)
     }
     
-    convenience init<C: Collection>(_ tableView: UITableView, collection: C)   {
+    convenience init<C: RealmCollection>(_ tableView: UITableView, collection: C) where C.Element == R  {
         self.init(tableView: tableView)
         self.startObservingRealm(for: collection)
     }
     
-    
-    convenience init<C: Collection>(_ tableView: UITableView, section: Int, collection: C, headerDelegate: SectionDelegate? = nil)  {
+    convenience init<C: RealmCollection>(_ tableView: UITableView, section: Int, collection: C, headerDelegate: SectionDelegate? = nil) where C.Element == R  {
         self.init(tableView: tableView, section: section, headerDelegate: headerDelegate)
         self.startObservingRealm(for: collection)
     }
@@ -283,7 +278,7 @@ class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSou
     override func stopObserving() {
         notificationToken?.stop()
     }
-    
+
     deinit {
         stopObserving()
     }
@@ -304,6 +299,5 @@ class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSou
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCallback?(items![indexPath.row])
     }
-    
     
 }

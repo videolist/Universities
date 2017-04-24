@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FCAB1819A268F8DFD17CA7A /* Pods_Universities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4823776B41315CA0B77FBFF /* Pods_Universities.framework */; };
+		DD80F3841EAE623300485A07 /* RealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80F3831EAE623300485A07 /* RealmDataSource.swift */; };
 		DDA1A3181E969626004657BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3171E969626004657BD /* AppDelegate.swift */; };
 		DDA1A31A1E969626004657BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3191E969626004657BD /* ViewController.swift */; };
 		DDA1A31D1E969626004657BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA1A31B1E969626004657BD /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		DDA1A32D1E969900004657BD /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A32C1E969900004657BD /* RealmObject.swift */; };
 		DDA1A32F1E969931004657BD /* RealmUniversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A32E1E969931004657BD /* RealmUniversity.swift */; };
 		DDA1A3321E969E17004657BD /* UniversitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3311E969E17004657BD /* UniversitiesAPI.swift */; };
-		DDA1A3341E96C273004657BD /* RealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3331E96C273004657BD /* RealmDataSource.swift */; };
 		DDA1A3361E96C36D004657BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3351E96C36D004657BD /* TableViewCell.swift */; };
 		DDA1A3381E96C3EE004657BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A3371E96C3EE004657BD /* Extensions.swift */; };
 		DDA1A33C1E96C4F5004657BD /* UniversitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1A33B1E96C4F5004657BD /* UniversitiesDataSource.swift */; };
@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		C4823776B41315CA0B77FBFF /* Pods_Universities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Universities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50EAAC489313ED8C9851261 /* Pods-Universities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universities.release.xcconfig"; path = "Pods/Target Support Files/Pods-Universities/Pods-Universities.release.xcconfig"; sourceTree = "<group>"; };
+		DD80F3831EAE623300485A07 /* RealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataSource.swift; sourceTree = "<group>"; };
 		DDA1A3141E969626004657BD /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA1A3171E969626004657BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA1A3191E969626004657BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +38,7 @@
 		DDA1A32C1E969900004657BD /* RealmObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
 		DDA1A32E1E969931004657BD /* RealmUniversity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUniversity.swift; sourceTree = "<group>"; };
 		DDA1A3311E969E17004657BD /* UniversitiesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitiesAPI.swift; sourceTree = "<group>"; };
-		DDA1A3331E96C273004657BD /* RealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataSource.swift; sourceTree = "<group>"; };
+		DDA1A3331E96C273004657BD /* RealmDataSource.old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataSource.old.swift; sourceTree = "<group>"; };
 		DDA1A3351E96C36D004657BD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DDA1A3371E96C3EE004657BD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DDA1A33B1E96C4F5004657BD /* UniversitiesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitiesDataSource.swift; sourceTree = "<group>"; };
@@ -114,7 +115,8 @@
 		DDA1A32B1E9698EE004657BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DDA1A3331E96C273004657BD /* RealmDataSource.swift */,
+				DDA1A3331E96C273004657BD /* RealmDataSource.old.swift */,
+				DD80F3831EAE623300485A07 /* RealmDataSource.swift */,
 				DDA1A32C1E969900004657BD /* RealmObject.swift */,
 				DDA1A32E1E969931004657BD /* RealmUniversity.swift */,
 				DDA1A3351E96C36D004657BD /* TableViewCell.swift */,
@@ -231,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CDC88320F8AC818DE23B604C /* [CP] Embed Pods Frameworks */ = {
@@ -258,10 +260,10 @@
 			files = (
 				DDA1A33C1E96C4F5004657BD /* UniversitiesDataSource.swift in Sources */,
 				DDA1A3321E969E17004657BD /* UniversitiesAPI.swift in Sources */,
+				DD80F3841EAE623300485A07 /* RealmDataSource.swift in Sources */,
 				DDA1A32F1E969931004657BD /* RealmUniversity.swift in Sources */,
 				DDA1A31A1E969626004657BD /* ViewController.swift in Sources */,
 				DDA1A3381E96C3EE004657BD /* Extensions.swift in Sources */,
-				DDA1A3341E96C273004657BD /* RealmDataSource.swift in Sources */,
 				DDA1A3181E969626004657BD /* AppDelegate.swift in Sources */,
 				DDA1A3361E96C36D004657BD /* TableViewCell.swift in Sources */,
 				DDA1A32D1E969900004657BD /* RealmObject.swift in Sources */,
@@ -388,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHF6QJR2PR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Universities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digitalprunes.Universities;
@@ -402,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHF6QJR2PR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Universities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digitalprunes.Universities;
