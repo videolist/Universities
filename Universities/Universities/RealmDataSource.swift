@@ -236,7 +236,7 @@ class RealmDataSource<R: RealmObject, Cell: TableViewCell> : GenericTableDataSou
         tableView.register(Cell.nib, forCellReuseIdentifier: Cell.nibName)
     }
     
-    func startObservingRealm<C: RealmCollection>(for collection: C) where C.Element == R {
+    func startObservingRealm<C: Collection>(for collection: C) {
         self.collection = AnyRealmCollection(collection)
     }
     
