@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Universities/Universities/*.{swift}"
+  s.source_files  = "Universities/Universities/Extensions.{swift}"
   s.exclude_files = "Universities/**/Pods/*.*"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -104,7 +104,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "Text.txt"
+  # s.resource  = "Text.txt"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
