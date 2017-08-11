@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Universities"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of Universities."
 
   # This description is used to generate tags and improve search results.
